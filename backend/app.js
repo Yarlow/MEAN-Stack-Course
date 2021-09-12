@@ -6,7 +6,7 @@ const postsRoutes = require("./routes/posts")
 
 const app = express()
 
-mongoose.connect("mongodb+srv://jacob:856fHxIFOTO4g1bs@cluster0.0bogm.mongodb.net/node-angular?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect("{{MongoDBSecret}}", { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() =>{
     console.log('connected to database!')
   })
